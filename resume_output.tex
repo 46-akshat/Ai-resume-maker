@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{\large#1} & \textbf{\small #2} \\
+        \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+{\Huge \scshape Your Name} \\ \vspace{1pt}
+city, state \\ \vspace{1pt}
+\small
+\href{tel:+xxxxxxxxxxxx}{\raisebox{-0.1\height}\faIcon[solid]{phone} \ \underline{+xx-9999999999}} ~
+\href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faIcon[solid]{envelope} \ \underline{yourname@gmail.com}} ~
+\href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faIcon[brands]{linkedin} \ \underline{yourid}} ~
+\href{https://github.com/yourid}{\raisebox{-0.2\height}\faIcon[brands]{github} \ \underline{yourid}} ~
+\href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faIcon[solid]{laptop-code} \ \underline{yourid}} ~
+\href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faIcon[solid]{code} \ \underline{yourid}}
+\vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\resumeSubheading{College Name}{MM YYYY -- MM YYYY}
+{Degree Name - \textbf{CGPA} - \textbf{xx}}{city, country}
+\resumeSubheading{School Name}{MM YYYY -- MM YYYY}
+{Exam Name - Course - \textbf{Percentage} - \textbf{xx\%}}{city, country}
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+\begin{multicols}{4}
+\begin{itemize}[itemsep=-2pt]
+\item Data Structures \& Algorithms
+\item Operating Systems
+\item Network Security
+\item DBMS
+\item Artificial Intelligence
+\item OOPS Concept
+\item Web Development
+\item Android Development
+\end{itemize}
+\end{multicols}
+\vspace*{2.0\multicolsep}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{ProjectLink.com}{\textbf{\large{\underline{Project One}}} \raisebox{-0.1\height}\faIcon[solid]{external-link-alt}} $|$ \large{\underline{Tech Stack}}}{MM YYYY}
+\resumeItemListStart
+\resumeItem{Project description with \textbf{highlights}.}
+\resumeItem{\textcolor{accent}{\href{Live Project Link}{\underline{Live site here}}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{ProjectLink.com}{\textbf{\large{\underline{Project Two}}} \raisebox{-0.1\height}\faIcon[solid]{external-link-alt}} $|$ \large{\underline{Tech Stack}}}{MM YYYY}
+\resumeItemListStart
+\resumeItem{Another project with key impact points.}
+\resumeItem{\textcolor{accent}{\href{DownloadLink.com}{\underline{Download here}}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{ProjectLink.com}{\textbf{\large{\underline{Project Three}}} \raisebox{-0.1\height}\faIcon[solid]{external-link-alt}} $|$ \large{\underline{Tech Stack}}}{MM YYYY}
+\resumeItemListStart
+\resumeItem{Third project with feature focus.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------INTERNSHIP-----------
+\section{INTERNSHIP}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Company Name \href{certificate Link}{\raisebox{-0.1\height}\faIcon[solid]{external-link-alt}}}{MM YYYY -- MM YYYY}
+{\underline{Role}}{city, country}
+\resumeItemListStart
+\resumeItem{Responsibilities and achievements.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages:} Python, Java, C, C++, Dart, JavaScript, SQL, NoSQL, R, XML, Go \\
+\textbf{Developer Tools:} VS Code, Android Studio, DataGrip, Goland, IntelliJ IDEA Ultimate \\
+\textbf{Frameworks/Tech:} Linux, GitHub, ReactJS, Redux, NextJS, NodeJS, ExpressJS, Git, MongoDB, Flutter
+}}
+\end{itemize}
+
+%-----------EXTRACURRICULAR-----------
+\section{EXTRACURRICULAR}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Organization \href{CertificateProofLink}{\raisebox{-0.1\height}\faIcon[solid]{external-link-alt}}}{MM YYYY -- MM YYYY}
+{\underline{Role}}{Location}
+\resumeItemListStart
+\resumeItem{Participation and tasks.}
+\resumeItem{Certificate: \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faIcon[solid]{external-link-alt}}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+$\sbullet[.75]$ \href{certificateLink.com}{ReactJS \& Redux - Udemy} \hspace{1.5cm}
+$\sbullet[.75]$ \href{certificateLink.com}{Java} \hspace{2.6cm}
+$\sbullet[.75]$ \href{certificateLink.com}{Command Line in Linux - Coursera} \\
+
+$\sbullet[.75]$ \href{certificateLink.com}{Python for Data Science - XIE} \hspace{1.2cm}
+$\sbullet[.75]$ \href{certificateLink.com}{SQL} \hspace{2.6cm}
+$\sbullet[.75]$ \href{certificateLink.com}{Microsoft AI Classroom - Microsoft} \\
+
+$\sbullet[.75]$ \href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL}} \hspace{1.5cm}
+$\sbullet[.75]$ \href{certificateLink.com}{MongoDB Basics} \hspace{0.5cm}
+$\sbullet[.75]$ \href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}
+
+\end{document}

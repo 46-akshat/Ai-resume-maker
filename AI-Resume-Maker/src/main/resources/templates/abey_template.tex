@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Akshat Jain (based on Abey George)
+% Template: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Safe bullet in text mode
+\newcommand{\sbullet}{\raisebox{0.6ex}{\tiny$\bullet$}\hspace{0.5em}}
+
+% Resume structure
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{\large#1} & \textbf{\small #2} \\
+        \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+% Start of Resume
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+{\Huge \scshape Your Name} \\ \vspace{1pt}
+city,state \\ \vspace{1pt}
+\small
+\href{tel:+xx9999999999}{\faPhone\ +xx-9999999999} ~
+\href{mailto:yourname@gmail.com}{\faEnvelope\ yourname@gmail.com} ~
+\href{https://linkedin.com/in/yourid}{\faLinkedin\ yourid} ~
+\href{https://github.com/yourid}{\faGithub\ yourid} ~
+\href{https://www.hackerrank.com/yourid}{\faCode\ yourid} ~
+\href{https://codeforces.com/profile/yourid}{\faCode\ yourid}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\resumeSubheading
+{College Name}{MM YYYY -- MM YYYY}
+{Degree Name - \textbf{CGPA: xx}}{city, country}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{College Name}{MM YYYY -- MM YYYY}
+{Exam Name - Course Name - \textbf{Percentage: xx\%}}{city, country}
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+\begin{multicols}{4}
+\begin{itemize}[itemsep=-2pt]
+\item Data Structures \& Algorithms
+\item Operating Systems
+\item Network Security
+\item Database Management System (DBMS)
+\item Artificial Intelligence
+\item OOPS Concept
+\item Web Development
+\item Android Development
+\end{itemize}
+\end{multicols}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://project.com}{\textbf{Project Name}} $|$ Technology Stack Used}{MM YYYY}
+\resumeItemListStart
+\resumeItem{About project \textbf{key points to highlight}.}
+\resumeItem{\textcolor{accent}{\href{https://project.com/live}{Live site here}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://project.com}{\textbf{Project Name}} $|$ Technology Stack Used}{MM YYYY}
+\resumeItemListStart
+\resumeItem{About project \textbf{highlight key points}.}
+\resumeItem{\textcolor{accent}{\href{https://project.com/download}{Download}}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://project.com}{\textbf{Project Name}} $|$ Technology Stack Used}{MM YYYY}
+\resumeItemListStart
+\resumeItem{About Project \textbf{highlight key points}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------INTERNSHIP-----------
+\section{INTERNSHIP}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Company Name}{MM YYYY -- MM YYYY}
+{\underline{Backend Developer Intern}}{City, Country}
+\resumeItemListStart
+\resumeItem{About the role \textbf{and responsibilities carried out.}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item \textbf{Languages:} Python, Java, C, C++, Dart, JavaScript, SQL, NoSQL, R, XML, Go \\
+\item \textbf{Developer Tools:} VS Code, Android Studio, DataGrip, Goland, IntelliJ Idea Ultimate \\
+\item \textbf{Technologies/Frameworks:} Linux, GitHub, ReactJS, Redux, NextJS, NodeJS, ExpressJS, Git, Mongo, Flutter
+}
+\end{itemize}
+
+%-----------EXTRACURRICULAR-----------
+\section{EXTRACURRICULAR}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Organization Name}{MM YYYY -- MM YYYY}
+{\underline{Role}}{Location}
+\resumeItemListStart
+\resumeItem{About the role \textbf{and responsibilities carried out.}}
+\resumeItem{Participation Certificate: \href{https://certificate.com}{Certificate Link}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+\sbullet \href{https://certificate.com}{ReactJS \& Redux - Udemy} \hspace{1.5cm}
+\sbullet \href{https://certificate.com}{Java} \hspace{2cm}
+\sbullet \href{https://certificate.com}{Command Line in Linux - Coursera} \\
+
+\sbullet \href{https://certificate.com}{Python for Data Science - XIE} \hspace{1.2cm}
+\sbullet \href{https://certificate.com}{SQL} \hspace{2.6cm}
+\sbullet \href{https://certificate.com}{Microsoft AI Classroom - Microsoft} \\
+
+\sbullet \href{https://certificate.com}{5 Stars in C++ \& SQL} \hspace{1.6cm}
+\sbullet \href{https://certificate.com}{MongoDB Basics} \hspace{1.1cm}
+\sbullet \href{https://certificate.com}{NodeJS with Express \& MongoDB - Udemy}
+
+\end{document}
